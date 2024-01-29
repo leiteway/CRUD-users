@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+</head>
+<body>
+    <form id="users-form">
+        <label for="new-name">Name</label><input id="new-name" type="text">
+        <label for="new-email">Email</label><input id="new-email" type="email">
+        <button type="submit" onclick="createUser()">Create User</button>
+    </form>
+
+        <button onclick="printUsers()">Cargar Info</button>
+        <button onclick="postUser()">+</button>
+
+    <section id="user-list">
+
+    </section>
+
+    <script src="/src/service.js"></script>
+</body>
+</html>

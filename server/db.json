@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Laura",
+      "email": "laura@lauraactualizada.com",
+      "age": 45
+    },
+    {
+      "id": "6b76",
+      "name": "Celia",
+      "email": "celia@correo.com",
+      "age": 32
+    },
+    {
+      "id": "d899",
+      "name": "Desi",
+      "email": "besidefresi@gmail.com"
+    }
+  ]
+}
