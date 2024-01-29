@@ -24,7 +24,7 @@ async function deleteUser(id) {
     return result
 }
 
-//Método POST C (create) del CRUD
+//Método POST C (create) del CRUD 
 async function postUser() {
     const newUser = {
         "name": "Desi",
@@ -41,4 +41,21 @@ async function postUser() {
     const result = await fetch(`http://localhost:3000/users`, options)
     return result
 
+}
+
+//Create del CRUD con formulario - metodo POST
+// Coge info de un formulario
+async function createUser() {
+    const formUser = document.getElementById("users-form")
+
+    const newUser = {
+        "name": formUser.elements[0].value,
+        "email": formUser.elements[1].value
+    };
+
+    const result = await fetch(`http://localhost:3000/users`, {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(newUser),
+    })
 }
